@@ -12,13 +12,13 @@ module.exports = ({ env }) => {
          port: config.port,
          database: config.database,
          user: config.user,
-         password: config.password
+         password: config.password,
+         ssl: {
+           rejectUnauthorized: false
+         }
        },
-       ssl: {
-         rejectUnauthorized: false
-       }
+       debug: false
      },
-     debug: false
    }
  }
  return  {
